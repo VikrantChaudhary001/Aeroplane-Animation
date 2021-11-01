@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.road{
+    height: 20vh;
+    width: 100vw;
+    background-image: url(road.jpg);
+    margin-top: 590px;
+    position: absolute;
+}
+
+
+.plane{
+    height: 120px;
+        width: 400px;
+        background-image: url(airplane.png);
+        background-size: cover;
+        position: absolute;
+        margin-left: 1500px;
+        margin-top: 546px;
+        animation: plane 5.1s linear infinite;
+}
+
+
+
+
+@keyframes plane{
+0%{
+    transform: translateX(0px) translateY(0px) rotate(0deg);
+}
+50%{
+    transform: translateX(-500px) translateY(0px) rotate(0deg);
+}
+100%{
+    transform: translateX(-1800px) translateY(-300px) rotate(22deg);
+}
+}
